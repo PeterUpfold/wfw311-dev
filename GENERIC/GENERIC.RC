@@ -16,5 +16,5 @@ BEGIN
 	CTEXT "Microsoft Windows"	-1, 0, 5, 144, 8
 	CTEXT "Generic Application"	-1, 0, 14, 144, 8
 	CTEXT "Version 3.1"			-1, 0, 34, 144, 8
-	DEFPUSHBUTTON "OK"			IDOK, 53, 32, 14, WS_GROUP
+	DEFPUSHBUTTON "OK"			IDOK, 53, 59, 32, 14, WS_GROUP
 END
