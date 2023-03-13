@@ -19,7 +19,7 @@ int nCmdShow;
 	}
 	
 	// instance-specific init
-	if (!InitInstance(hinstCurrent, nCmdShow))
+	if (!InitInstance(hInstCurrent, nCmdShow))
 		return FALSE;
 		
 	// message pump
@@ -43,7 +43,7 @@ HINSTANCE hInstCurrent;
 	wc.cbWndExtra = 0;
 	
 	wc.hInstance = hInstCurrent;
-	wc.hIcon = LoadIcon(NULL, IDL_APPLICATION);
+	wc.hIcon = LoadIcon(NULL, IDI_APPLICATION);
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
 	wc.hbrBackground = GetStockObject(WHITE_BRUSH);
 	wc.lpszMenuName = "GenericMenu"; // from .RC file
@@ -85,7 +85,7 @@ int nCmdShow;
 	return TRUE;
 }
 
-LRESULT FAR PASCAL MainWndProc(hWnd, message, wParam, lParam);
+LRESULT FAR PASCAL MainWndProc(hWnd, message, wParam, lParam)
 HWND hWnd;
 UINT message;
 WPARAM wParam;
@@ -102,14 +102,14 @@ LPARAM lParam;
 				FreeProcInstance(lpProcAbout);
 				break;
 			}
-			return (DefWindowProc(hWnd, message, wParam, lParam);
+			return (DefWindowProc(hWnd, message, wParam, lParam));
            
 		case WM_DESTROY:        // close main window
 			PostQuitMessage(0);
 			break;
 			
 		default:
-			return (DefWindowProc(hWnd, message, wParam, lParam);
+			return (DefWindowProc(hWnd, message, wParam, lParam));
 			
 		}
 		return NULL;
