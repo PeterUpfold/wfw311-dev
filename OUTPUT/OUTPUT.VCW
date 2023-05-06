@@ -1,0 +1,11 @@
+[MSVC Status File]
+Version=1.00
+ProjectType=10
+External=1
+DebugBuildCmd=NMAKE /f OUTPUT.MAK
+ReleaseBuildCmd=NMAKE /f OUTPUT.MAK
+RebuildOption=/a
+BuildMode=1
+TargetName=C:\DEV\OUTPUT\OUTPUT.EXE
+BrkptCount=0
+WatchCount=0
